@@ -103,7 +103,6 @@ main {
     height: calc(100% - 560px);
     align-items: flex-end;
     min-height: 150px;
-    
 }
 
 .logo {
@@ -159,4 +158,48 @@ input[type="text"]:focus {
     cursor: pointer;
     border: 1px solid #f8f9fa;
     box-shadow: 0 0 1px 1px #e4e5e6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #70757a;
+    font-size: .875em;
+
+    background-color: var(--color-light-grey)
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    padding: 1em;
+}
+
+.footer-link {
+    padding: 0 1.25em;
+}
+
+@media only screen and (max-width: 57em) {
+    footer {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .footer-left {
+        order: 1;
+    }
+
+    .footer-center {
+        display:flex;
+        order: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .footer-right {
+        order 2;
+    }
 }
