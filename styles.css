@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 
 
     font-family: 'Roboto', sans-serif;
@@ -89,14 +90,24 @@ a:hover {
 main { 
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     width: 100%;
+    flex: 1;
+    height: 100%;
     max-width: 39em;
 }
 
-.logo {
-    align-self: center;
+.logo-container {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 560px);
+    align-items: flex-end;
+    min-height: 150px;
+    
+}
 
-        
+.logo {
+    max-height: 92px;
 }
 
 .search-form {
@@ -118,6 +129,13 @@ main {
     width: 100%;
     max-width: 90%;
     padding-left: 1em;
+
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #e4e5e6;
 }
 
 .form-group {
