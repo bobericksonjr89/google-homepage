@@ -200,6 +200,6 @@ footer {
 
 
     .footer-right {
-        order 2;
+        order: 2;
     }
 }
